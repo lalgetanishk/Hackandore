@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Supply Management</title>
+    <link rel="stylesheet" href="water.css">
+</head>
+<body>
+    <navbar>
+        <nav class="navbar">
+            <div class="container">
+                <a href="home.html" class="logo">IMC</a>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="water.html">Water-Departments</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </navbar>
+    <main>
+        <h1>Water Supply Management</h1>
+        <form id="water-supply-form">
+            <label for="enter-household-id">enter household id:</label>
+            <input type="number" id="enter-household-id" name=" required>
+
+            <label for="totalWaterSupplied">Total Water Supplied (liters):</label>
+            <input type="number" id="totalWaterSupplied" name="totalWaterSupplied" required>
+
+            <label for="totalWaterReceived">Total Water Received (liters):</label>
+            <input type="number" id="totalWaterReceived" name="totalWaterReceived" required>
+
+            <label for="location">Location:</label>
+            <select id="location" name="location" required>
+                <option value="kilaMaidan">Zone 1 (kilaMaidan)</option>
+                <option value="rajMohalla">Zone 2 (rajMohalla)</option>
+                <option value="nagarNigam">Zone 3 (Nagar Nigam)</option>
+                <option value="nehruStadium">Zone 4 (Nehru Stadium)</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="report"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Water Supply Management System</p>
+    </footer>
+    <script src="water.js"></script>
+</body>
+</html>
